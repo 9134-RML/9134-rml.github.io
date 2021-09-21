@@ -1,0 +1,348 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="icon" type="image/gif" href="resource/tree ico.gif">
+	<title>Save Our Planet | Tugas PRK PTS</title>
+	<style>
+		* {
+	        margin: 0;
+	        padding: 0;
+	        border: 0;
+	        outline: 0;
+	        font-size: 100%;
+	        vertical-align: baseline;
+	        background: transparent;
+	    }
+	    sub {
+			vertical-align: sub;
+			font-size: smaller;
+		}
+		sup {
+			vertical-align: super;
+			font-size: smaller;
+		}
+		sup a {
+			color: darkcyan;
+			text-decoration: none;
+		}
+		sup a:visited {
+			color: darkcyan;
+			text-decoration: none;
+		}
+		a.diff {
+			background-color: #34571a;
+		}
+		a.diff:hover {
+			background-color: #4e7332;
+		}
+	    #navico {
+	    	float:left;
+	    	display: block;
+	    	height:100%;
+	    	padding: 4pt 5pt;
+	    	background-color: #226b36;
+	    }
+	    #navico img {
+	    	height: 80%;
+	    }
+	    #navbar {
+	    	margin: 0;
+	    	padding: 0;
+	    	overflow: hidden;
+	    	top: 0;
+	    	width: 100%;
+	    	height: 42pt;
+	    	position: fixed;
+	    	vertical-align: middle;
+	    	background-color: #204a2b;
+	    }
+	    #navbar a {
+	    	float: left;
+	    	display: inline-flex;
+	    	align-items: center;
+	    	height: 100%;
+			color: white;
+			text-align: center;
+			padding: 0 12pt;
+			text-decoration: none;
+			font: bold 14pt Trebuchet MS, Helvetica, sans-serif;
+	    }
+		#navbar a:hover:not(.diff) {
+			background-color: #226b36;
+		}
+		#navbar a:visited {
+			color: white;
+		}
+		#heading {
+			margin-top:40pt;
+			padding:30pt 0;
+			background-image:url('resource/forest-head.webp');
+			height:200pt;
+			width:100%;
+			text-align: center;
+		}
+		#heading h1 {
+			font: bold 48pt Copperplate, Papyrus, fantasy;
+			color: white;
+		}
+		#heading h2 {
+			font: 18px Brush Script MT, cursive;
+			color: white;
+			display: inline-block;
+			background-color: rgba(97,116,100,.85);
+			padding: 7pt 16pt;
+			border-radius: 15pt;
+		}
+		#content {
+			width: 65%;
+			height: 100%;
+			margin: 0 auto;
+		}
+		#content b{
+			font-family: Helvetica;
+		}
+		#content img {
+			margin: 12pt;
+			border: 5pt outset white;
+		}
+		#content p{
+			display: block;
+			text-align: justify;
+		}
+		#content h3 {
+			font: small-caps bold 36pt Tahoma, Verdana, sans-serif;
+			line-height: 1;
+			margin-bottom: 0.34em;
+		}
+		#content h4 {
+			font: bold 18pt Tahoma, Verdana, sans-serif;
+			line-height: 1;
+			margin-bottom: .5em;
+		}
+		.content-items {
+			border-radius: 15pt;
+			padding: 30pt;
+		}
+		#Latar {
+			background-color: rgba(72,122,88,.75);
+		}
+		#Sebab {
+			background-color: rgba(230,175,90,.75);
+		}
+		#Sebab p {
+			margin-bottom: 1em;
+		}
+		#Akibat {
+			background-color: rgba(210,115,115,.75);
+		}
+		#Akibat p {
+			margin-bottom: 1em;
+		}
+		#Akibat table {
+			padding: 5pt;
+			border-collapse: collapse;
+		}
+		#Akibat td{
+			border: 1pt solid black;
+			padding: 5pt;
+		}
+		#Akibat th{
+			border: 2pt solid black;
+			padding: 5pt;
+			font: bold 14pt Helvetica, sans-serif;
+		}
+		#Akibat caption{
+			font: bold 14pt/2 Trebuchet MS, Helvetica, sans-serif;
+		}
+		.numbering {
+			text-align: center;
+			width: 10%;
+		}
+		#Selamat {
+			background-color: rgba(120, 150, 195,.75);
+		}
+		#Selamat ul {
+			padding-left:3em;
+			list-style: circle outside url('resource/tree ico.gif');	
+		}
+		#Selamat ul>li {
+			font: bold 16pt/2.3 Helvetica, sans-serif;
+		}
+		#Selamat ul>li>p {
+			font: 12pt/2.3 Trebuchet MS, Helvetica, sans-serif;
+		}
+		#footer {
+			display: block;
+			height: 200pt;
+			background-color: #204a2b;
+			padding: 20pt 40pt;
+			color: white;
+		}
+		#footer a {
+			color: white;
+			text-decoration: none;
+		}
+		#footer a:visited {
+			color: white;
+			text-decoration: none;
+		}
+		#footer a:hover {
+			font-weight: bold;
+			color: white;
+			text-decoration: underline dashed white;
+		}
+		#footer h3 {
+			font: small-caps bold 24pt Tahoma, Verdana, sans-serif;
+			line-height: 1;
+			margin-bottom: 0.34em;
+		}
+		#footer b{
+			font-family: Helvetica;
+		}
+		#footer img {
+			margin: 12pt;
+			border: 5pt outset white;
+			float:right;
+		}
+	</style>
+</head>
+<body style="font: 12.5pt/2.3 Trebuchet MS, Helvetica, sans-serif; width: 100%; height: 100%;">
+	<div id="navbar">
+		<div id="navico">
+			<img src="resource/CC Logo-smol.webp" alt="">
+		</div>
+		<a href="#top">Home</a>
+		<a href="#Latar">Latar</a>
+		<a href="#Sebab">Sebab</a>
+		<a href="#Akibat">Akibat</a>
+		<a href="#Selamat">Selamat</a>
+		<a href="https://uap.jesuits.id/" style="float:right" class="diff">UAP</a>
+	</div>
+	<div id="heading">
+		<h1>Rawatlah Pohonmu, <br>Selamatkanlah Bumimu</h1>
+		<h2>Webpage bertema UAP 4, "Rumah Kita Bersama", <br>By: Ray Michael Lutan 9.6/23</h2>
+	</div>
+	<div id="content">
+		<a id="Latar"></a>
+		<br>
+		<div id="Latar" class="content-items">
+			<h3>Latar Belakang</h3>
+			<img src="resource/tree latar.webp" alt="Foto Pohon" style="float:right; width:30%;">
+			<p>
+				<b>Pohon</b> adalah tumbuhan yang dapat menghasilkan <b>oksigen (O<sub>2</sub>)</b> melalui proses <b>fotosintesis</b> agar tumbuhan pohon tersebut dapat membentuk kebutuhan makanannya. Untuk menjalankan proses fotosintesis, tumbuhan pohon perlu menggunakan <b>karbon dioksida (CO<sub>2</sub>)</b> yang biasa dihembus keluar oleh mahkluk hidup yang menghirup oksigen dari udara. Pohon juga merupakan bagian penting dari linkungan kita sebagai rumah tinggal beberapa mahkluk hidup dan juga sebagai bahan konstruksi rumah kita. Dapat dibilang bahwa <b>tumbuhan pohon merupakan salah satu tumbuhan yang sangat penting untuk kelangsungan mahkluk hidup</b> lain yang membutuhkan oksigen seperti kita. Akan tetapi, dengan sejalannya waktu, jumlah pohon dan hutan di dunia mulai berkurang. Mari kita lihat mengapa jumlah pohon berkurang!
+			</p>
+		</div>
+		<a id="Sebab"></a>
+		<br>
+		<div id="Sebab" class="content-items">
+			<h3 style="text-align: right;">Sebab</h3>
+			<img src="resource/wildfire.webp" alt="Foto Kebakaran Hutan" style="float:left; width: 32%;">
+			<p>
+				Penyebab dari berkurangnya jumlah pohon dan hutan dapat dibagi menjadi 2 kategori, yang disebabkan oleh manusia dan yang disebabkan secara natural. Jumlah pengurangan pohon yang diakibatkan oleh kegiatan manusia lebih besar dibandingankan pengurangan yang terjadi secara natural. Inilah beberapa penyebab-penyabab dari berkurangnya jumlah pohon dan hutan yang ada di Bumi kita: 
+			</p>
+			<h4>Sebab Manusia</h4>
+			<p style="margin:0;">
+				Manusia memerlukan pohon untuk banyak hal, dan salah satunya adalah sebagai bahan bangunan (kayu yang didapatkan dari pohon) dan juga bahan bakar. Agar manusia dapat kayu yang banyak untuk pembangunan infrastruktur dan hal lain seperti furnitur rumah, mereka memotong pohon dengan jumlah yang banyak sehingga akibatnya hutan-hutan, yang membutuhkan waktu bertahun-tahun untuk tumbuh, menjadi gundul. 
+			</p>
+			<img src="resource/potong pohon.webp" alt="Foto Potong Pohon" style="float:right; width: 30%;">
+			<p>
+				Beberapa orang juga mendapatkan mata pencaharian mereka dari buah-buah dan hal-hal lain yang dihasilkan oleh beberapa jenis pohon. Tetapi mereka tidak selalu mendapatkan buah-buahan dari pohon, mereka juga membutuhkan sayuran dan buah yang datang dari tumbuhan-tumbuhan lain. Untuk hal tersebut, manusia terkadang membakar hutan-hutan agar mereka dapat membuka lahan pertanian. Pembakaran hutan seperti ini juga terkadang dilakukan agar abu yang dihasilkan dapat digunakan untuk menghasilkan tanah yang subur agar hasil pertanian bisa lebih baik. Tetapi tidak semua kebakaran hutan diakibatkan oleh manusia secara sengaja, terdapat kejadian juga dimana manusia dengan tidak sengaja membakar hutan akibat rokok, atau perkemahan yang tidak diawasi.
+			</p>
+			<h4>Sebab Natural</h4>
+			<p>
+				Terkadang tumbuhan-tumbuhan yang sudah mati dan menjadi kering dapat mengakibatkan kebakaran hutan. Biasa hal tersebut didukungi oleh kondisi cuaca dan udara yang kering. Pada saat kondisi tersebut vegetasi hijau dapat menjadi bahan bakar. Kekeringan juga dapat mengakibatkan pohon-pohon untuk mati sehingga jumlah pohon berkurang. Jumlah pohon yang berkurang sebanding dengan keburukan dari kekeringan.
+			</p>
+		</div>
+		<a id="Akibat"></a>
+		<br>
+		<div id="Akibat" class="content-items">
+			<h3 style="text-align: left;">Akibat</h3>
+			<p style="margin:0;">
+				Salah satu hal yang pernah dibahas oleh artikel ini adalah bahwa pohon menghasilkan oksigen<sup><a href="#Latar">[ref]</a></sup>. Oksigen yang dihasilkan oleh pohon-pohon sangat penting bagi atmosfer dan juga binatang hidup. Atmosfer kita terdiri oleh satu lapisan yang dinamakan "Lapisan Ozon". Lapisan tersebut berfungsi agar Bumi dapat terlindungi oleh sinar ultrviolet dari matahari dan juga mengatur suhu Bumi agar tidak menjadi terlalu panas. 
+			</p>
+			<img src="resource/climate c.webp" alt="Foto Climate Change" style="float:left; width: 30%;">
+			<p>
+				Tetapi dengan peningkatannya polusi udara dan berkurangnya jumlah pohon, lapisan Ozon telah mulai menipis yang mengakibatkan perubahan iklim. Perubahan tersebut telah mulai mencairkan es di kutub Utara dan juga kutub Selatan. Binatang-binatang yang tinggal di dunia es tersebut, sekarang harus terpaksa berenang jauh-jauh agar mereka dapat menemukan es untuk beristirahat. Selain dari binatang yang tinggal di kutub Utara dan kutub Selatan. Binatang yang menghuni di hutan atau pohon juga terancam akibat berkurangnya jumlah pohon. Contohnya adalah satu spesies burung, yang difiturkan di film "Rio", "Spix's Macaw", telah dinyatakan punah pada tahun 2018, akibat pohon yang penting untuk spesies mereka telah hilang. 
+			</p>
+			<p style="margin:">
+				Kegiatan memotong dan membakar pohon oleh manusia telah membuat mengurangkan area perpohonan di Eropa Barat dari 80% menjadi 34%., America Utara telah memotong setengah dari perpohonan yang ada, dan Cina hanya mempunyai sisa 20% dari perpohonan dulunya. 
+			</p>
+			<table style="width: 80%; margin:10pt auto;">
+				<caption>Tabel Sisa Area Pohon Akibat Kegiatan</caption>
+				<caption>Memotong dan Membakar Pohon Oleh Manusia</caption>
+				<tr>
+					<th class="numbering">Nomor</th>
+					<th style="width:50%;">Tempat</th>
+					<th>Area Perpohonan Tersisa</th>
+				</tr>
+				<tr>
+					<td class="numbering">1. </td>
+					<td>Eropa Barat</td>
+					<td style="text-align:center">34% dari 80%</td>
+				</tr>
+				<tr>
+					<td class="numbering">2. </td>
+					<td>America Utara</td>
+					<td style="text-align:center">50% dari 100%</td>
+				</tr>
+				<tr>
+					<td class="numbering">3. </td>
+					<td>Cina</td>
+					<td style="text-align:center">20%</td>
+				</tr>
+			</table>
+			<img src="resource/nipah bat.webp" alt="Foto Nipah Bat" style="float:right; width: 34%;">
+			<p>
+				Selain dari binatang saja yang terancam, kita pun juga terancam dengan adanya virus Nipah yang tertimbul akibat pembakaran hutan untuk lahan. Pembakaran tersebut mengakibatkan buah-buahan, yang merupakan makanan kelelawar, untuk tidak tumbuh sehingga kelelawar-kelelawar tersebut mencari makanan di tempat yang baru. Kelelawar-kelelawar tersebut membawa virus berbahaya yang dengan tidak sengaja disebarkan ke babi dan akhirnya ke kita, manusia. Tanah yang dulu juga ditahan oleh perpohonan yang ada diatasnya sekarang lebih rentan terhadap erosi yang akibatnya meningkatkan kemungkinannya terjadi tanah lonsor pada daerah pegunungan.
+			</p>
+		</div>
+		<a id="Selamat"></a>
+		<br>
+		<div id="Selamat" class="content-items">
+			<h3 style="text-align: right;">Selamatkanlah Pohon Kita</h3>
+			<p>
+				Kamu dapat membantu menyelamatkan pohon dengan mengikuti beberapa cara yang terdapat dibawah ini:
+				<ul>
+					<li>
+						Membantu Menanam Pohon
+						<p>
+							Dengan berkontribusi dengan menanam pohon kita dapat satu per satu, menumbuhkan kembali pohon-pohon yang kita telah gunakan. Jika kita dapat mengajak banyak orang untuk mengikuti kita, kita dapat menanam lebih banayak pohon.
+						</p>
+					</li>
+					<li>
+						Mengikuti Kampanye untuk Melestarikan Pohon
+						<p>
+							Kampanye-kampanye seperti biasa menjalankan kegiatan untuk meningkatkan kesadaran tentang berkurangnya jumlah pohon. Mereka akan pasti membutuhkan voluntir sehingga kita juga dapat membantu dalam kegiatan mereka yang biasa dapat merupakan menumbuh pohon.
+						</p>
+					</li>
+					<li>
+						Berhenti Membuang Sampah Sembarangan
+						<p>
+							Sampah yang kita buang dapat mengakibatkan polusi dan menurunkan kualitas air yang dapat membunuh pohon. Selain itu, polusi tersebut dapat mempercepat perubahan iklim yang dapat mengakibatkan kekeringan dan meningkatkan kemungkinan terjadinya kebakaran hutan secara natural.
+						</p>
+					</li>
+					<li>
+						Membeli Produk yang Ramah Lingkungan
+						<p>
+							Produk yang biasanya ramah lingkungan atau ramah hutan biasa diproduksi melalui cara-cara yang ramah dengan lingkungan sehingga jika kita dapat meningkatkan permintaan produk dari produsen yang ramah lingkungan, kita bisa dapat mengalternativekan metode produksi produsen lain ke metode yang lebih ramah lingkungan dan tidak merusak lebih banyak pohon.
+						</p>
+					</li>
+				</ul>
+			</p>
+		</div>
+	</div>
+	<br>
+	<div id="footer">
+		<img src="resource/save trees.webp" alt="Foto Selamatkan Pohon" style="height: 85%; margin-right:2.5em;">
+		<h3>Refrensi</h3>
+		<ol>
+			<li><a href="https://www.nationalgeographic.com/environment/article/wildfires">Ref 1 - https://www.nationalgeographic.com/environment/article/wildfires</a></li>
+			<li><a href="https://www.nationalgeographic.org/encyclopedia/deforestation/">Ref 2 - https://www.nationalgeographic.org/encyclopedia/deforestation</a></li>
+			<li><a href="https://hot.liputan6.com/read/4457967/5-fungsi-lapisan-ozon-bagi-kehidupan-ketahui-penyebab-dan-dampak-penipisannya">Ref 3 - https://hot.liputan6.com/read/4457967/5-fungsi-lapisan-ozon-bagi-kehidupan-ketahui-penyebab-dan-dampak-penipisannya</a></li>
+			<li><a href="https://www.nationalgeographic.com/science/article/deforestation-leading-to-more-infectious-diseases-in-humans">Ref 4 - https://www.nationalgeographic.com/science/article/deforestation-leading-to-more-infectious-diseases-in-humans</a></li>
+			<li><a href="https://www.globalforestwatch.org/blog/data-and-research/four-species-that-went-extinct-this-century-because-of-forest-loss/">Ref 5 - https://www.globalforestwatch.org/blog/data-and-research/four-species-that-went-extinct-this-century-because-of-forest-loss</a></li>
+			<li><a href="https://treefoundation.org/10-things-you-can-do-to-save-forests/">Ref 6 - https://treefoundation.org/10-things-you-can-do-to-save-forests</a></li>
+		</ol>
+	</div>
+</body>
+</html>
